@@ -32,7 +32,7 @@ export const experiencesData = [
   {
     title:
       "Graduated From Imam muhammad ibn saud university, College of Computer and Information Sciences",
-
+    location: "@Imam muhammad ibn saud university",
     description: "With Honors, GPA 4.5.",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
