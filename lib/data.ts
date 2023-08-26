@@ -4,6 +4,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/login.png";
 import rmtdevImg from "@/public/burhan.png";
 import wordanalyticsImg from "@/public/Infrastructure-IFM2.jpeg";
+import compiler from "@/public/Compiler.png";
+import chat from "@/public/chat.png";
 
 export const links = [
   {
@@ -87,11 +89,25 @@ export const projectsData = [
     imageUrl: rmtdevImg,
   },
   {
-    title: "Messaging system using Microservices",
+    title: "Ticketing System using Microservices architecture",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["Docker", "kubernetes", "NodeJS", "Nats message broker"],
+      "Developed a ticketing system using microservices architecture with buss event driven communication.",
+    tags: ["Docker", "kubernetes", "NodeJS", "ReactJS", "Nats message broker"],
     imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Custom Compiler",
+    description:
+      "Developed a Lexical Analysis, Syntax Analysis, Semantic Analysis part of a custom compiler.",
+    tags: ["Python", "Django", "Postman"],
+    imageUrl: compiler,
+  },
+  {
+    title: "Real-time Chat Application",
+    description:
+      "Developed a real-time chat application using WebRTC & SSL certificate.",
+    tags: ["Docker", "NodeJS", "ReactJS", "WebRTC", "MongoDB"],
+    imageUrl: chat,
   },
 ] as const;
 
