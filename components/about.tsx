@@ -19,10 +19,11 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        Detail oriented Software Engineer who Thrives in a complex design of
-        software applications. Capable of developing, testing and deploying
-        highly scalable software applications. Proficient in creating and
-        maintaining highly secure and scalable Microservices.
+        Detail-Oriented Software Engineer Specializing in Microservices
+        Architecture and Cloud-Based Solutions. Demonstrates a Robust Skillset
+        in Developing, Testing, and Deploying Scalable and Resilient Software
+        Applications. Proficient in Building and Maintaining High-Performance
+        Microservices, Optimized for Cloud Environments.
       </p>
     </motion.section>
   );

@@ -3,8 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
@@ -12,7 +11,6 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -31,13 +29,12 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/headshot.jpg"
+              src="/headshot-turki.jpg"
               alt="Turki alqahtani"
-              width="250"
-              height="250"
-              quality="95"
+              width="90"
+              height="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-26 w-25 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
         </div>
@@ -48,9 +45,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Turki.</span> I'm a{" "}
+        <span className="font-bold">Hello, I'm Turki,</span> a{" "}
         <span className="font-bold">Software Engineer</span> who is interested
-        in building large scalable microservices
+        in building large scalable systems.
       </motion.h1>
 
       <motion.div
@@ -72,7 +69,7 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/turki-al-qahtani-776321227/"
+          href="https://www.linkedin.com/in/turki-alqahtani-776321227/"
           target="_blank"
         >
           <BsLinkedin />

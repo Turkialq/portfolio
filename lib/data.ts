@@ -4,8 +4,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/login.png";
 import rmtdevImg from "@/public/burhan.png";
 import wordanalyticsImg from "@/public/Infrastructure-IFM2.jpeg";
-import compiler from "@/public/Compiler.png";
-import chat from "@/public/chat.png";
+import devops from "@/public/devops.jpeg";
+import chat from "@/public/chat.jpeg";
 
 export const links = [
   {
@@ -32,14 +32,6 @@ export const links = [
 
 export const experiencesData = [
   {
-    title:
-      "Graduated From Imam muhammad ibn saud university, College of Computer and Information Sciences",
-    location: "@Imam muhammad ibn saud university",
-    description: "With Honors, GPA 4.5.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2023",
-  },
-  {
     title: "Full-Stack Developer",
     location: "@Confidential",
     description:
@@ -48,7 +40,15 @@ export const experiencesData = [
     date: "2022 - 2023",
   },
   {
-    title: "Full-Stack Developer",
+    title:
+      "Graduated From Imam muhammad ibn saud university, College of Computer and Information Sciences",
+    location: "@Imam muhammad ibn saud university",
+    description: "With Honors, GPA 4.5.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2023",
+  },
+  {
+    title: "Full-Stack Software Engineer",
     location: "@Confidential",
     description:
       "Part of the backend-Team team where i was resposible for Desiging, Developing and Deploying full stack applications.",
@@ -58,6 +58,40 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Data-Analysis-Platform",
+    description: `Developed a data analysis management system that Leveraged functionality like OCR, full tex-search and complex file operations.`,
+    tags: [
+      "Docker & Kubernetes",
+      ".NET",
+      "ReactJS",
+      "MongoDB",
+      "Elasticsearch",
+      "Redis",
+    ],
+    imageUrl: rmtdevImg,
+  },
+  {
+    title: "Communication System",
+    description:
+      "Lead the development of a feature-rich communication system, encompassing instant messaging capabilities ,VOIP and End to End Encryption.",
+    tags: ["Docker", "Kafka", "NodeJS", "ReactJS", "WebRTC", "MongoDB"],
+    imageUrl: chat,
+  },
+  {
+    title: "Devops Pipeline",
+    description:
+      "Designed & Implemented state of the art Devops pipeline to streamline the progression of software projects.",
+    tags: [
+      "Docker & Kubernetes",
+      "Jenkins",
+      "AWS",
+      "Github",
+      "Terraform",
+      "SonarQube",
+    ],
+    imageUrl: devops,
+  },
   {
     title: "Tadreebi",
     description: `Designed and Developed a platform that connects Saudi Universities with Ministries, Companies and Institutions
@@ -73,41 +107,13 @@ export const projectsData = [
     ],
     imageUrl: corpcommentImg,
   },
-  {
-    title: "Burhan",
-    description: `Developed a data analysis management system that Leveraged functionality like OCR, FULL-TEXT-SEARCH and real
-      time video call`,
-    tags: [
-      "Docker",
-      ".NET",
-      "ReactJS",
-      "PostgreSQL",
-      "Elasticsearch",
-      "Redis",
-      "Apache-Tika",
-    ],
-    imageUrl: rmtdevImg,
-  },
+
   {
     title: "Ticketing System using Microservices architecture",
     description:
       "Developed a ticketing system using microservices architecture with buss event driven communication.",
-    tags: ["Docker", "kubernetes", "NodeJS", "ReactJS", "Nats message broker"],
+    tags: ["Docker & Kubernetes", "NodeJS", "ReactJS", "Nats message broker"],
     imageUrl: wordanalyticsImg,
-  },
-  {
-    title: "Custom Compiler",
-    description:
-      "Developed a Lexical Analysis, Syntax Analysis, Semantic Analysis part of a custom compiler.",
-    tags: ["Python", "Django", "Postman"],
-    imageUrl: compiler,
-  },
-  {
-    title: "Real-time Chat Application",
-    description:
-      "Developed a real-time chat application using WebRTC & SSL certificate.",
-    tags: ["Docker", "NodeJS", "ReactJS", "WebRTC", "MongoDB"],
-    imageUrl: chat,
   },
 ] as const;
 
@@ -116,9 +122,11 @@ export const skillsData = [
   "Kubernetes",
   "AWS",
   ".NET",
-  "NodeJs",
+  "C#",
+  "Java",
+  "Python",
   "Django",
-  "NextJs",
+  "NodeJs",
   "ReactJS",
   "TypeScript",
   "PostgreSQL",
