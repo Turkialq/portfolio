@@ -132,5 +132,6 @@ export const skillsData = [
   "PostgreSQL",
   "MongoDB",
   "Elasticsearch",
+  "Kafka",
   "Redis",
 ] as const;
